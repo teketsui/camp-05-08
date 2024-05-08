@@ -1,0 +1,16 @@
+n = int(input())
+li = [int(input()) for _ in range(n)]
+   
+X = 0
+Y = 0
+   
+for i in range(n):
+    if (i % 4) == 1:
+        X += li[i]
+    elif (i % 4) ==2:
+        Y -= li[i]
+    elif (i % 4) ==3:
+        X -= li[i]
+    else:
+        Y += li[i]
+print(f"{X}" + " " + f"{Y}")
