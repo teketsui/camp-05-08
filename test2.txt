@@ -1,0 +1,15 @@
+N = int(input())
+P = list(map(int, input().split()))
+Q = list(map(int, input().split()))
+R = ""
+
+for i in range(N):
+    if P[i] == Q[i]:
+        R += str(i+1) + " "
+    else:
+        R = R
+
+if R == "":
+    print(0)
+else:
+    print(R)
